@@ -6,22 +6,22 @@ from astropy import units as u
 # -----------------------------
 # USER PARAMETERS
 # -----------------------------
-start_time_str = "2024-10-21 00:00:00"   # UTC start
+start_time_str = "2025-08-21 00:00:00"   # UTC start
 sim_duration_s = 24 * 3600               # simulate 1 day
 dt = 10                                   # time step [s] (use 1–10 s depending on detail)
 elevation_mask_deg = 0.0                  # only record passes above this elevation
 
 # Walker-Delta constellation parameters
-N = 20      # total satellites
-P = 5       # orbital planes
+N = 12      # total satellites
+P = 2       # orbital planes
 F = 1       # phasing parameter (0..P-1 usually; general definition uses F mod P)
-i_deg = 12  # inclination [deg] (set 10-15 as you wish)
-h_km = 600  # altitude [km] (set 500-1000)
+i_deg = 25  # inclination [deg] (set 10-15 as you wish)
+h_km = 1000  # altitude [km] (set 500-1000)
 raan0_deg = 0.0  # reference RAAN
 argp_deg = 0.0   # argument of perigee (circular orbit, arbitrary)
 
 # Thailand focus – your ground station (Chiang Mai by default)
-lat_gs_deg = 18.852706
+lat_gs_deg = 30
 lon_gs_deg = 98.958425
 h_gs_m = 351.0
 

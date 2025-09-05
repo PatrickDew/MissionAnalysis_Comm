@@ -12,7 +12,7 @@ dt = 10                                   # time step [s] (use 1–10 s dependin
 elevation_mask_deg = 0.0                  # only record passes above this elevation
 
 # Walker-Delta constellation parameters
-N = 20      # total satellites
+N = 10      # total satellites
 P = 5       # orbital planes
 F = 1       # phasing parameter (0..P-1 usually; general definition uses F mod P)
 i_deg = 12  # inclination [deg] (set 10-15 as you wish)
@@ -200,7 +200,7 @@ def simulate_walker_delta():
                 })
 
     df = pd.DataFrame(rows).sort_values(["t_sec","Plane","SatInPlane"]).reset_index(drop=True)
-    outname = f"walker_delta_N{N}_P{P}_F{F}_i{i_deg}_h{h_km}km_{start_time_str[:10]}.csv"
+    outname = f"walker_delta_N{N}_P{P}_F{F}_i{i_deg}_h{h_km}km_{start_time_str[:10]}_only_positive.csv"
     df.to_csv(outname, index=False)
     print(f"Saved {len(df)} visibility rows to {outname}")
     print(df.head())
