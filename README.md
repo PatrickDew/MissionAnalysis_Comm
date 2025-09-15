@@ -1,26 +1,54 @@
 # Satellite Visibility Simulation 🚀
 
-Simulating how satellites appear from a ground station in **Chiang Mai, Thailand (18.852706° N, 98.958425° E, 351 m)**.  
-This project includes both **synthetic constellation modeling** and **real TLE-based orbit propagation**.  
+Simulating satellite visibility from **Chiang Mai, Thailand (18.852706° N, 98.958425° E, 351 m)** with both **synthetic Walker-Delta constellation modeling** and **real TLE-based orbit propagation**. This project includes comprehensive mission analysis tools for CubeSat communication systems and STK scenarios for detailed constellation coverage analysis.
 
-✨ This project connects orbital mechanics with ground station visibility analysis, providing a foundation for constellation design and satellite tracking studies.
+✨ This project connects orbital mechanics with ground station visibility analysis, providing a foundation for constellation design, satellite tracking studies, and mission analysis.
 
 ## Overview
 - [Walker-Delta Simulation](#walker-delta-simulation)
 - [TLE Propagation](#tle-propagation)
+- [STK Mission Analysis](#stk-mission-analysis)
 - [Requirements](#requirements)
 
 ## Walker-Delta Simulation
-**File:** `walker_delta_draft_positive_visible.py.py`  
+**Files:** `walker_delta_draft_positive_visible.py`, `walker_delta_NPF_15_5_1.py`
 
-Implements a configurable **Walker-Delta constellation** generator.  
+Implements configurable **Walker-Delta constellation** generators with coverage analysis. The main analysis tool (`walker_delta_NPF_15_5_1.py`) provides automated constellation optimization, coverage continuity analysis, and mission planning capabilities for Thailand coverage requirements.
 
+**Key Features:**
+- Configurable constellation parameters (N, P, F, inclination, altitude)
+- Coverage gap analysis and continuity assessment
+- Elevation angle tracking with 10° minimum threshold
+- Automated optimization for continuous coverage
 
 ## TLE Propagation
-**File:** `TLE_All_Visible.py`  
+**File:** `TLE_All_Visible.py`
 
-Uses real **Two-Line Elements (TLEs)** and propagates satellite motion with the **SGP4 model**.  
+Uses real **Two-Line Elements (TLEs)** and propagates satellite motion with the **SGP4 model** for accurate orbital mechanics analysis.
 
+## STK Mission Analysis
+**Directory:** `STK-11-Scenarios/`
+
+Complete STK workspace containing 54-satellite Walker-Delta constellation analysis optimized for Thailand coverage. The scenario includes three orbital planes with 18 satellites each, configured at 12.5° inclination and 600 km altitude for optimal coverage of the 5° to 20° latitude region.
+
+**Constellation Configuration:**
+- 54 LOGSAT satellites in Walker-Delta formation
+- 3 orbital planes with RAAN and argument of periapsis shifts
+- Simple conic coverage with 45° half-angle
+- Ground stations: Chiang Mai Facility and Communication Site
+
+**Communication Analysis:**
+- Ka-band downlink for high data rate transmission
+- S-band downlink for command and control
+- Link budget analysis with adequate margins
+- Coverage continuity >99% with <5 minute maximum gaps
+
+![STK 2D Graphics](STK-11-Scenarios/2D_Graphics.jpg)
+
+*2D visualization of the 54-satellite Walker-Delta constellation showing orbital planes and coverage patterns over Thailand*
+
+**Advanced Subsystem Integration:**
+The STK scenarios consider communication subsystem requirements, thermal control analysis, electrical power system (EPS) modeling, and payload accommodation for mission-specific requirements.
 
 ## Requirements
 Install dependencies with:
@@ -28,10 +56,32 @@ Install dependencies with:
 pip install numpy pandas astropy sgp4 matplotlib
 ```
 
-
 ## How to Run
-Run either script directly:
+
+**Python Analysis:**
 ```bash
-python walker_delta_draft_positive_visible.py.py
+# Run constellation analysis
+python walker_delta_NPF_15_5_1.py
+
+# Plot coverage from existing data
+python plot_coverage_from_csv.py walker_delta_N20_P5_F1_i12_h600km_2024-10-21_analysis.csv
+
+# TLE-based analysis
 python TLE_All_Visible.py
 ```
+
+**STK Analysis:**
+1. Open STK 11
+2. Load workspace: `STK-11-Scenarios/...`
+3. Run coverage and link budget analyses
+4. Generate reports and visualizations
+
+## Analysis Results
+
+**Coverage Performance:** >99% coverage with <5 minute maximum gaps, elevation angles 10° to 90°, up to 3-4 satellites simultaneously visible.
+
+**Communication Performance:** Adequate link budget margins for Ka-band and S-band, high-throughput downlink capabilities, reliable command and control uplink.
+
+---
+
+<!-- *This project is part of the EOS Orbit Internship 2026 mission analysis initiative.* -->

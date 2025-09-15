@@ -1,0 +1,314 @@
+stk.v.11.0
+WrittenBy    STK_v11.2.0
+
+BEGIN FigureOfMerit
+
+Name        CovTimeTotal
+
+BEGIN FomDefinition
+
+
+    BEGIN CoverageTime
+        TimeType           Absolute
+
+    END CoverageTime
+    ApplySatisfaction    No
+    SatisfactionType     Above
+    SatisfactionThreshold    0.00000000000000e+00
+    NotExecutedValue         0.00000000000000e+00
+    UseFOMValueRangeCheck    0
+    ExcludeValuesInRange     0
+    FOMValueRangeMin         0.00000000000000e+00
+    FOMValueRangeMax         0.00000000000000e+00
+
+END FomDefinition
+
+Begin SavedValues
+    FileName: CovTimeTotal.fmv
+End SavedValues
+
+BEGIN Extensions
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN Desc
+    END Desc
+    
+    BEGIN Graphics
+
+BEGIN Attributes
+
+    StaticColor                 #00ffff
+    StaticColorRampStartColor   #ff0000
+    StaticColorRampEndColor     #0000ff
+    StaticMarkerStyle           3
+    AnimationColor              #ff00ff
+    AnimColorRampStartColor     #00ff00
+    AnimColorRampEndColor       #00ffff
+    AnimationMarkerStyle        2
+    ObjectCovMarkerStyle        0
+    ObjectCovLineStyle          0
+    ObjectCovLineWidth          1.000000
+
+END Attributes
+
+BEGIN Graphics
+
+    Show                 Yes
+    ShowStatic           Yes
+    ShowAnim             Yes
+    ShowStaticContours   Yes
+    ShowAnimContours     No
+    ShareContours        No
+    StaticFillPoints     Yes
+    AnimFillPoints       Yes
+    StaticColorRamp      Yes
+    AnimColorRamp        Yes
+    StaticContourType    SmoothFill
+    AnimContourType      Block
+    StaticShowUpToMax    No
+    DynShowUpToMax       No
+    Begin StaticContours
+        NumContourLevels          28
+        BEGIN ContourLevel
+            Value            0.000000000000e+00
+            Color            #ff00ff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            3.200000000000e+03
+            Color            #ffff00
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            6.400000000000e+03
+            Color            #0000ff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            9.600000000000e+03
+            Color            #ff0000
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            1.280000000000e+04
+            Color            #ffffff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            1.600000000000e+04
+            Color            #00ff00
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            1.920000000000e+04
+            Color            #ff00ff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            2.240000000000e+04
+            Color            #ffff00
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            2.560000000000e+04
+            Color            #0000ff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            2.880000000000e+04
+            Color            #ff0000
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            3.200000000000e+04
+            Color            #ffffff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            3.520000000000e+04
+            Color            #00ff00
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            3.840000000000e+04
+            Color            #00ffff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            4.160000000000e+04
+            Color            #ff00ff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            4.480000000000e+04
+            Color            #ffff00
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            4.800000000000e+04
+            Color            #0000ff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            5.120000000000e+04
+            Color            #ff0000
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            5.440000000000e+04
+            Color            #ff0000
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            5.760000000000e+04
+            Color            #ffffff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            6.080000000000e+04
+            Color            #00ffff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            6.400000000000e+04
+            Color            #ff00ff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            6.720000000000e+04
+            Color            #ffff00
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            7.040000000000e+04
+            Color            #0000ff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            7.360000000000e+04
+            Color            #ff0000
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            7.680000000000e+04
+            Color            #ffffff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            8.000000000000e+04
+            Color            #00ff00
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            8.320000000000e+04
+            Color            #00ffff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            8.640000000000e+04
+            Color            #ff00ff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+    End StaticContours
+    StaticTranslucent    Yes
+    StaticTranslucency   0.500000
+    DynamicTranslucent   Yes
+    DynamicTranslucency  0.700000
+    NNSampleSizeMode     Medium
+    MaxNumSearchPixels   512
+    Begin StaticLegend
+        DrawLegendOnMap    Yes
+        XPixelLocation     5
+        YPixelLocation     5
+        Orientation        VertMinToMax
+        MaxPerCol          10
+        ColorPixelWidth    40
+        ColorPixelHeight   20
+        TextColor          #ffffff
+        BackgroundColor    #000000
+        Title              Coverage Time - Static Contours
+        Format             %.1f
+    End StaticLegend
+    Begin DynamicLegend
+        DrawLegendOnMap    No
+        XPixelLocation     5
+        YPixelLocation     5
+        Orientation        HorizMinToMax
+        MaxPerRow          20
+        ColorPixelWidth    40
+        ColorPixelHeight   20
+        TextColor          #ffffff
+        BackgroundColor    #000000
+        Title              Coverage Time - Dynamic Contours
+        Format             %.1f
+    End DynamicLegend
+    AccumulationType     CurrentOnly
+
+END Graphics
+    END Graphics
+    
+    BEGIN VO
+    END VO
+
+END Extensions
+
+END FigureOfMerit
+

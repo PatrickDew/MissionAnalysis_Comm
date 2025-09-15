@@ -1,0 +1,130 @@
+stk.v.11.0
+WrittenBy    STK_v11.2.0
+
+BEGIN FigureOfMerit
+
+Name        SimpleCov_vs_Time
+
+BEGIN FomDefinition
+
+
+    BEGIN SimpleCoverage
+
+    END SimpleCoverage
+    ApplySatisfaction    No
+    SatisfactionType     Above
+    SatisfactionThreshold    0.00000000000000e+00
+    NotExecutedValue         0.00000000000000e+00
+    UseFOMValueRangeCheck    0
+    ExcludeValuesInRange     0
+    FOMValueRangeMin         0.00000000000000e+00
+    FOMValueRangeMax         0.00000000000000e+00
+
+END FomDefinition
+
+BEGIN Extensions
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN Desc
+    END Desc
+    
+    BEGIN Graphics
+
+BEGIN Attributes
+
+    StaticColor                 #ffff00
+    StaticColorRampStartColor   #ff0000
+    StaticColorRampEndColor     #0000ff
+    StaticMarkerStyle           3
+    AnimationColor              #0000ff
+    AnimColorRampStartColor     #00ff00
+    AnimColorRampEndColor       #00ffff
+    AnimationMarkerStyle        2
+    ObjectCovMarkerStyle        0
+    ObjectCovLineStyle          0
+    ObjectCovLineWidth          1.000000
+
+END Attributes
+
+BEGIN Graphics
+
+    Show                 No
+    ShowStatic           Yes
+    ShowAnim             Yes
+    ShowStaticContours   Yes
+    ShowAnimContours     No
+    ShareContours        No
+    StaticFillPoints     Yes
+    AnimFillPoints       Yes
+    StaticColorRamp      Yes
+    AnimColorRamp        Yes
+    StaticContourType    Block
+    AnimContourType      Block
+    StaticShowUpToMax    No
+    DynShowUpToMax       No
+    Begin StaticContours
+        NumContourLevels          2
+        BEGIN ContourLevel
+            Value            0.000000000000e+00
+            Color            #00ff00
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+        BEGIN ContourLevel
+            Value            1.000000000000e+00
+            Color            #00ffff
+            CntMarkerStyle   0
+            LineStyle        0
+            LineWidth        0.000000
+        END ContourLevel
+    End StaticContours
+    StaticTranslucent    Yes
+    StaticTranslucency   0.500000
+    DynamicTranslucent   Yes
+    DynamicTranslucency  0.700000
+    NNSampleSizeMode     Medium
+    MaxNumSearchPixels   512
+    Begin StaticLegend
+        DrawLegendOnMap    Yes
+        XPixelLocation     5
+        YPixelLocation     5
+        Orientation        HorizMinToMax
+        MaxPerRow          20
+        ColorPixelWidth    40
+        ColorPixelHeight   20
+        TextColor          #ffffff
+        BackgroundColor    #000000
+        Title              Simple Coverage - Static Contours
+        Format             %.1f
+    End StaticLegend
+    Begin AnimContours
+        NumContourLevels          0
+    End AnimContours
+    Begin DynamicLegend
+        DrawLegendOnMap    No
+        XPixelLocation     5
+        YPixelLocation     5
+        Orientation        HorizMinToMax
+        MaxPerRow          20
+        ColorPixelWidth    40
+        ColorPixelHeight   20
+        TextColor          #ffffff
+        BackgroundColor    #000000
+        Title              Simple Coverage - Dynamic Contours
+        Format             %.1f
+    End DynamicLegend
+    AccumulationType     CurrentOnly
+
+END Graphics
+    END Graphics
+    
+    BEGIN VO
+    END VO
+
+END Extensions
+
+END FigureOfMerit
+

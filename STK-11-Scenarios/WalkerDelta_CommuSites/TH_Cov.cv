@@ -1,0 +1,241 @@
+stk.v.11.0
+WrittenBy    STK_v11.2.0
+
+BEGIN CoverageDefinition
+
+Name        TH_Cov
+
+BEGIN GridDefinition
+
+    VersionIndicator     20080103
+    Begin                CustomRegions
+        AreaTarget    AreaTarget/Thailand
+        CheckForHoles		Yes
+        AllowSmallRegionIsotropicAlgorithm
+    End                  CustomRegions
+    LatResolution        2.500000000000000e-01
+    LonResolution        2.500000000000000e-01
+    UsePolarRegions        Yes
+    GridClass            Target
+    PointLocationMethod  EqualArea
+    CustomPtAltMethod    ValueFromFile
+    CentralBody          Earth
+    GroundAltMethod      UseAltType
+    GroundAlt            0.000000
+    AltitudeMethod       Altitude
+    Begin AltitudeList
+        0.000000
+    End AltitudeList
+
+END GridDefinition
+
+BEGIN AccessDefinition
+
+    DataRetention        AllData
+    Convergence          0.005000
+    AbsValueConvergence  1.000000e-14
+    RelValueConvergence  1.000000e-08
+    MaxTimeStep          360.000000
+    MinTimeStep          1.000000e-02
+    UseLightTimeDelay    No
+    TimeSense            PerAsset
+    DetectEventsUsingSamplesOnly No
+    AutoRecompute        Yes
+    UseAllAssetAccess        No
+    AssetSatisType           AtLeast
+    AssetSatisThreshold      1
+    AccessSaveMode       SaveWith
+    RegionAccessAccel    Auto
+
+END AccessDefinition
+
+BEGIN AssetList
+
+    Satellite/LOGSAT1101/Sensor/Sensor1   Active 
+    Required No
+    Satellite/LOGSAT1102/Sensor/Sensor2   Active 
+    Required No
+    Satellite/LOGSAT1103/Sensor/Sensor3   Active 
+    Required No
+    Satellite/LOGSAT1104/Sensor/Sensor4   Active 
+    Required No
+    Satellite/LOGSAT1105/Sensor/Sensor5   Active 
+    Required No
+    Satellite/LOGSAT1106/Sensor/Sensor6   Active 
+    Required No
+    Satellite/LOGSAT1107/Sensor/Sensor7   Active 
+    Required No
+    Satellite/LOGSAT1108/Sensor/Sensor8   Active 
+    Required No
+    Satellite/LOGSAT1109/Sensor/Sensor9   Active 
+    Required No
+    Satellite/LOGSAT1110/Sensor/Sensor10   Active 
+    Required No
+    Satellite/LOGSAT1111/Sensor/Sensor11   Active 
+    Required No
+    Satellite/LOGSAT1112/Sensor/Sensor12   Active 
+    Required No
+    Satellite/LOGSAT1113/Sensor/Sensor13   Active 
+    Required No
+    Satellite/LOGSAT1114/Sensor/Sensor14   Active 
+    Required No
+    Satellite/LOGSAT1115/Sensor/Sensor15   Active 
+    Required No
+    Satellite/LOGSAT1116/Sensor/Sensor16   Active 
+    Required No
+    Satellite/LOGSAT1117/Sensor/Sensor17   Active 
+    Required No
+    Satellite/LOGSAT1118/Sensor/Sensor18   Active 
+    Required No
+    Satellite/LOGSAT1201/Sensor/Sensor19   Active 
+    Required No
+    Satellite/LOGSAT1202/Sensor/Sensor20   Active 
+    Required No
+    Satellite/LOGSAT1203/Sensor/Sensor21   Active 
+    Required No
+    Satellite/LOGSAT1204/Sensor/Sensor22   Active 
+    Required No
+    Satellite/LOGSAT1205/Sensor/Sensor23   Active 
+    Required No
+    Satellite/LOGSAT1206/Sensor/Sensor24   Active 
+    Required No
+    Satellite/LOGSAT1207/Sensor/Sensor25   Active 
+    Required No
+    Satellite/LOGSAT1208/Sensor/Sensor26   Active 
+    Required No
+    Satellite/LOGSAT1209/Sensor/Sensor27   Active 
+    Required No
+    Satellite/LOGSAT1210/Sensor/Sensor28   Active 
+    Required No
+    Satellite/LOGSAT1211/Sensor/Sensor29   Active 
+    Required No
+    Satellite/LOGSAT1212/Sensor/Sensor30   Active 
+    Required No
+    Satellite/LOGSAT1213/Sensor/Sensor31   Active 
+    Required No
+    Satellite/LOGSAT1214/Sensor/Sensor32   Active 
+    Required No
+    Satellite/LOGSAT1215/Sensor/Sensor33   Active 
+    Required No
+    Satellite/LOGSAT1216/Sensor/Sensor34   Active 
+    Required No
+    Satellite/LOGSAT1217/Sensor/Sensor35   Active 
+    Required No
+    Satellite/LOGSAT1218/Sensor/Sensor36   Active 
+    Required No
+    Satellite/LOGSAT1301/Sensor/Sensor37   Active 
+    Required No
+    Satellite/LOGSAT1302/Sensor/Sensor38   Active 
+    Required No
+    Satellite/LOGSAT1303/Sensor/Sensor39   Active 
+    Required No
+    Satellite/LOGSAT1304/Sensor/Sensor40   Active 
+    Required No
+    Satellite/LOGSAT1305/Sensor/Sensor41   Active 
+    Required No
+    Satellite/LOGSAT1306/Sensor/Sensor42   Active 
+    Required No
+    Satellite/LOGSAT1307/Sensor/Sensor43   Active 
+    Required No
+    Satellite/LOGSAT1308/Sensor/Sensor44   Active 
+    Required No
+    Satellite/LOGSAT1309/Sensor/Sensor45   Active 
+    Required No
+    Satellite/LOGSAT1310/Sensor/Sensor46   Active 
+    Required No
+    Satellite/LOGSAT1311/Sensor/Sensor47   Active 
+    Required No
+    Satellite/LOGSAT1312/Sensor/Sensor48   Active 
+    Required No
+    Satellite/LOGSAT1313/Sensor/Sensor49   Active 
+    Required No
+    Satellite/LOGSAT1314/Sensor/Sensor50   Active 
+    Required No
+    Satellite/LOGSAT1315/Sensor/Sensor51   Active 
+    Required No
+    Satellite/LOGSAT1316/Sensor/Sensor52   Active 
+    Required No
+    Satellite/LOGSAT1317/Sensor/Sensor53   Active 
+    Required No
+    Satellite/LOGSAT1318/Sensor/Sensor54   Active 
+    Required No
+
+END AssetList
+
+BEGIN Interval
+
+    AccStart             25 Aug 2025 00:00:00.000000000
+    AccStop              26 Aug 2025 00:00:00.000000000
+    UseScenarioInterval       No
+    AccIntervalPtr
+	BEGIN	EVENTINTERVAL
+			EventInterval
+				BEGIN	EVENTINTERVAL
+					Type	EVENTINTERVAL_LINKTO
+					Name	AnalysisInterval
+					AbsolutePath	Scenario
+				END	EVENTINTERVAL
+			IntervalState	Implicit
+	END	EVENTINTERVAL
+
+
+END Interval
+
+Begin SavedAccesses
+    FileName: TH_Cov.cva
+End SavedAccesses
+
+BEGIN Extensions
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN Desc
+    END Desc
+    
+    BEGIN Graphics
+
+BEGIN Attributes
+
+    GridMarkerStyle          1
+    GridColor                #ffffff
+    ProgressColor            #00ffff
+    SatisfactionColor        #00ff00
+    GridTranslucency         0.500000
+    SatisfactionTranslucency 0.700000
+
+END Attributes
+
+BEGIN Graphics
+
+    Show                 Yes
+    ShowGrid             Yes
+    ShowRegions          No
+    ShowRegionsText      No
+    ShowPoints           Yes
+    FillPoints           No
+    ShowProgress         Yes
+    ShowSatisfaction     No
+
+END Graphics
+    END Graphics
+    
+    BEGIN VO
+    END VO
+
+END Extensions
+
+BEGIN SubObjects
+
+Class FigureOfMerit
+
+	CovTimeTotal
+	SimpleCov_vs_Time
+	TimeAvgGap
+
+END Class
+
+END SubObjects
+
+END CoverageDefinition
+
