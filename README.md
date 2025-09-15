@@ -7,9 +7,9 @@ Simulating satellite visibility from **Chiang Mai, Thailand (18.852706° N, 98.9
 ## Technology Stack
 
 <div align="center">
-  <img src="images/Python.png" alt="Python" width="80" height="80"/>
-  <img src="images/astropy.jpg" alt="Astropy" width="80" height="80"/>
-  <img src="images/ANSYS.png" alt="ANSYS STK" width="80" height="80"/>
+  <img src="images/Python.png" alt="Python" width="150" height="150"/>
+  <img src="images/astropy.jpg" alt="Astropy" width="150" height="150"/>
+  <img src="images/ANSYS.png" alt="ANSYS STK" width="300" height="550"/>
 </div>
 
 **Core Technologies:**
