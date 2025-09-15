@@ -4,6 +4,25 @@ Simulating satellite visibility from **Chiang Mai, Thailand (18.852706° N, 98.9
 
 ✨ This project connects orbital mechanics with ground station visibility analysis, providing a foundation for constellation design, satellite tracking studies, and mission analysis.
 
+## Technology Stack
+
+<div align="center">
+  <img src="images/Python.png" alt="Python" width="80" height="80"/>
+  <img src="images/astropy.jpg" alt="Astropy" width="80" height="80"/>
+  <img src="images/ANSYS.png" alt="ANSYS STK" width="80" height="80"/>
+</div>
+
+**Core Technologies:**
+- **Python** - Data analysis and constellation simulation
+- **Astropy** - Orbital mechanics, time systems, and coordinate transformations
+- **ANSYS STK** - Advanced mission analysis and visualization
+
+**Key Capabilities:**
+- **Orbital Mechanics**: SGP4 propagation, coordinate transformations (ECI↔ECEF↔LLH)
+- **Time Systems**: UTC, local time (UTC+7), sidereal time calculations
+- **Coverage Analysis**: Elevation angle tracking, gap analysis, continuity assessment
+- **Mission Planning**: Walker-Delta constellation optimization for Thailand coverage
+
 ## Overview
 - [Walker-Delta Simulation](#walker-delta-simulation)
 - [TLE Propagation](#tle-propagation)
@@ -46,7 +65,7 @@ Complete STK workspace containing 54-satellite Walker-Delta constellation analys
 - Link budget analysis with adequate margins
 - Coverage continuity >99% with <5 minute maximum gaps
 
-![STK 2D Graphics](STK-11-Scenarios/2D_Graphics.jpg)
+![STK 2D Graphics](images/2D_Graphics.jpg)
 
 *2D visualization of the 54-satellite Walker-Delta constellation showing orbital planes and coverage patterns over Thailand*
 
