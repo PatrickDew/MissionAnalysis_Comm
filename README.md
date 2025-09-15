@@ -11,9 +11,12 @@ Simulating satellite visibility from **Chiang Mai, Thailand (18.852706° N, 98.9
 - [Requirements](#requirements)
 
 ## Walker-Delta Simulation
-**Files:** `walker_delta_draft_positive_visible.py`, `walker_delta_NPF_15_5_1.py`
+**Files:** `walker_delta_draft_positive_visible.py`
 
-Implements configurable **Walker-Delta constellation** generators with coverage analysis. The main analysis tool (`walker_delta_NPF_15_5_1.py`) provides automated constellation optimization, coverage continuity analysis, and mission planning capabilities for Thailand coverage requirements.
+Implements configurable **Walker-Delta constellation** generators with coverage analysis. The main analysis tool provides mission planning capabilities for Thailand coverage requirements.
+<!-- **Files:** `walker_delta_draft_positive_visible.py`, `walker_delta_NPF_15_5_1.py`
+
+Implements configurable **Walker-Delta constellation** generators with coverage analysis. The main analysis tool (`walker_delta_NPF_15_5_1.py`) provides automated constellation optimization, coverage continuity analysis, and mission planning capabilities for Thailand coverage requirements. -->
 
 **Key Features:**
 - Configurable constellation parameters (N, P, F, inclination, altitude)
@@ -29,7 +32,7 @@ Uses real **Two-Line Elements (TLEs)** and propagates satellite motion with the 
 ## STK Mission Analysis
 **Directory:** `STK-11-Scenarios/`
 
-Complete STK workspace containing 54-satellite Walker-Delta constellation analysis optimized for Thailand coverage. The scenario includes three orbital planes with 18 satellites each, configured at 12.5° inclination and 600 km altitude for optimal coverage of the 5° to 20° latitude region.
+Complete STK workspace containing 54-satellite Walker-Delta constellation analysis optimized for Thailand coverage. The scenario includes three orbital planes with 18 satellites each, configured at 12.5° inclination and 1000 km altitude for optimal coverage of the 5° to 20° latitude region.
 
 **Constellation Configuration:**
 - 54 LOGSAT satellites in Walker-Delta formation
@@ -61,10 +64,7 @@ pip install numpy pandas astropy sgp4 matplotlib
 **Python Analysis:**
 ```bash
 # Run constellation analysis
-python walker_delta_NPF_15_5_1.py
-
-# Plot coverage from existing data
-python plot_coverage_from_csv.py walker_delta_N20_P5_F1_i12_h600km_2024-10-21_analysis.csv
+python walker_delta_draft_positive_visible.py
 
 # TLE-based analysis
 python TLE_All_Visible.py
@@ -85,3 +85,8 @@ python TLE_All_Visible.py
 ---
 
 <!-- *This project is part of the EOS Orbit Internship 2026 mission analysis initiative.* -->
+<!-- # python walker_delta_NPF_15_5_1.py
+python walker_delta_draft_positive_visible.py
+
+# # Plot coverage from existing data
+# python plot_coverage_from_csv.py walker_delta_N20_P5_F1_i12_h600km_2024-10-21_analysis.csv -->
